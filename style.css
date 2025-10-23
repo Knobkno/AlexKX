@@ -1,0 +1,71 @@
+/* --------------------
+   CONFIGURACIÓN GLOBAL Y VARIABLES
+   -------------------- */
+:root {
+    /* Tus colores profesionales de Coolors */
+    --color-dark: #000022; 
+    --color-accent: #0094C6;
+    --color-light: #FFFFFF;
+}
+
+body {
+    /* Usamos las fuentes que enlazamos en el HTML */
+    font-family: 'Inter', sans-serif; 
+    color: var(--color-dark);
+    margin: 0;
+    padding: 0;
+    
+    /* Centra el contenido en la pantalla */
+    display: flex;
+    justify-content: flex-start; /* Alineación a la izquierda */
+    align-items: center;
+    min-height: 100vh; 
+    padding-left: 100px; /* Margen inicial para que no toque el borde */
+}
+
+/* --------------------
+   SECCIÓN HERO
+   -------------------- */
+.hero-section {
+    max-width: 800px; 
+}
+
+.hero-title {
+    /* Basado en la estética de tu diseño Figma (tamaño grande) */
+    font-family: 'Montserrat', sans-serif; /* Sugerencia para el título */
+    font-size: 56px; 
+    margin-bottom: 24px;
+    line-height: 1.1; 
+}
+
+.hero-subtitle {
+    /* Basado en la estética de tu diseño Figma (texto legible) */
+    font-family: 'Lora', serif; /* Sugerencia para el subtítulo */
+    font-size: 20px;
+    color: #4c4c4c; 
+    margin-bottom: 32px; 
+}
+
+/* --------------------
+   BOTÓN CTA (200x56)
+   -------------------- */
+.main-button {
+    /* Valores extraídos de tu Component 1 de Figma */
+    display: inline-block;
+    width: 200px;
+    height: 56px; 
+    line-height: 56px; 
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    background-color: var(--color-accent); 
+    color: var(--color-light); 
+    font-weight: 700;
+    border-radius: 8px; 
+    transition: background-color 0.3s ease;
+}
+
+.main-button:hover {
+    background-color: #00668F; 
+}
