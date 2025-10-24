@@ -255,4 +255,33 @@ textarea {
         width: 100%;
         margin: 30px 0 0;
     }
+    .main-wrapper {
+        padding: 0 20px; /* Reducimos el padding horizontal del contenedor principal */
+    }
+    
+    .hero-section {
+        padding: 50px 0; /* Eliminamos el padding lateral, el wrapper ya lo tiene */
+        text-align: left; /* Alineamos a la izquierda, es más fácil de leer en móvil */
+    }
+    
+    .section-title {
+        font-size: 32px; /* Reducimos el h2 (El Desafío) */
+    }
+
+    /* --------------------
+       ARREGLO DE TEXTO DE ESTADÍSTICAS
+       -------------------- */
+    .stats-container {
+        /* Aseguramos que haya espacio entre las cajas apiladas */
+        gap: 30px; 
+    }
+    
+    .stat-box {
+        text-align: left; /* Alineamos los números a la izquierda para claridad */
+    }
+    .main-button {
+        width: 100%;
+        max-width: 200px; 
+        margin: 0; /* Quitamos cualquier margen horizontal extra que pueda centrarlo */
+    }
 }
