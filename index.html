@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="main-wrapper">
     <header class="hero-section">
         <h1 class="hero-title">Alex KX: Desarrollador Front-End y experiencias de usuario</h1>
         
@@ -17,5 +18,50 @@
         
         <a href="#proyectos" class="main-button">VER PROYECTOS</a>
     </header>
+   
+    <section class="about-project" id="about-project">
+        <h2 class="section-title">El Desafío: Velocidad y Conversión</h2>
+        
+        <div class="stats-container">
+            <div class="stat-box">
+                <p class="stat-number">95+</p>
+                <p class="stat-label">Puntuación PageSpeed</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-number">1.5s</p>
+                <p class="stat-label">Tiempo de Carga Móvil</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-number">CSS Grid</p>
+                <p class="stat-label">Arquitectura de Layout</p>
+            </div>
+        </div>
+
+        <p class="about-text">La meta de este proyecto era crear una Landing Page de captación de *leads* con un tiempo de carga inferior a **1.5 segundos**, utilizando solo HTML y CSS vainilla para garantizar la máxima ligereza.</p>
+        <p class="about-text">El resultado es una arquitectura **semántica** y optimizada para el **SEO**, demostrando que la velocidad es un factor de conversión clave.</p>
+    </section>
+    <section class="conversion-form-section" id="formulario">
+        <h2 class="section-title">¿Interesado en Rendimiento? Hablemos.</h2>
+        <p class="form-intro">Envíame un mensaje y te demostraré cómo el "pixel perfect" y la velocidad se convierten en resultados de negocio.</p>
+
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre" />
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Mensaje Breve (Opcional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="¿Cómo puedo ayudarte?"></textarea>
+            </div>
+
+            <button type="submit" class="main-button form-submit-btn">ENVIAR CONSULTA</button>
+        </form>
+    </section>
 </body>
 </html>

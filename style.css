@@ -1,3 +1,30 @@
+/* ARREGLO DE FLUJO: Envolvemos todo el contenido */
+.main-wrapper {
+    /* Establece un ancho máximo para todo el contenido principal de la web */
+    max-width: 1200px; 
+    /* Lo centra en la página */
+    margin: 0 auto; 
+    /* Le da un poco de espacio a los lados para que no se pegue al borde */
+    padding: 0 40px; 
+}
+
+/* Modificamos el body para que solo sirva de fondo y contenga el wrapper */
+body {
+    /* Mantenemos el font-family, color, etc. */
+    padding-left: 0; /* Aseguramos que no haya padding extra */
+    min-height: 100vh;
+    /* Eliminamos cualquier display: flex/grid que pudiera quedar aquí */
+}
+
+/* Reajustamos las secciones para que fluyan */
+.hero-section {
+    /* Eliminamos el margin: 0 auto; que pusimos antes, ya que el wrapper lo centra */
+    /* Lo establecemos para que ocupe todo el ancho del wrapper */
+    width: 100%; 
+    padding: 100px 0; /* Padding vertical, ya que el wrapper tiene el horizontal */
+    text-align: left; /* Lo ponemos a la izquierda, ya que es el estándar profesional */
+}
+/* Revisa la sección .about-project y asegúrate de que tiene width: 100%; */
 /* --------------------
    CONFIGURACIÓN GLOBAL Y VARIABLES
    -------------------- */
@@ -68,4 +95,164 @@ body {
 
 .main-button:hover {
     background-color: #00668F; 
+}
+ /* --------------------
+   SECCIÓN SOBRE EL PROYECTO
+   -------------------- */
+.about-project {
+    padding: 100px 100px; /* Espacio para separarla de otras secciones */
+    max-width: 1000px; /* Ancho máximo para mejor lectura */
+    margin: 0 auto; /* Centrar el contenedor principal */
+}
+
+.section-title {
+    font-size: 40px; 
+    color: var(--color-dark);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+}
+
+/* --------------------
+   ESTADÍSTICAS (SECCIÓN DE VENTA)
+   -------------------- */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-accent); /* Tu color de acento resalta los números */
+}
+
+.stat-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--color-gray);
+}
+/* --------------------
+   SECCIÓN FORMULARIO
+   -------------------- */
+.conversion-form-section {
+    padding: 100px 40px; 
+    max-width: 800px; /* Hacemos el formulario más estrecho para enfocarse */
+    margin: 0 auto; 
+    text-align: center; /* Centramos el título y el párrafo */
+}
+
+.form-intro {
+    font-size: 18px;
+    color: var(--color-gray);
+    margin-bottom: 40px;
+}
+
+/* --------------------
+   ESTILOS DE INPUTS
+   -------------------- */
+.contact-form {
+    text-align: left; /* Alineamos el formulario internamente a la izquierda */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    /* Destacamos el input en tu color de acento cuando está activo */
+    border-color: var(--color-accent); 
+    outline: none; /* Quitamos el feo borde azul por defecto */
+}
+
+textarea {
+    resize: vertical; /* Permite al usuario solo redimensionar verticalmente */
+}
+
+/* --------------------
+   BOTÓN DE ENVÍO
+   -------------------- */
+.form-submit-btn {
+    /* Hereda .main-button, pero quitamos el width fijo para que se ajuste */
+    width: 100%;
+    max-width: 250px; 
+    display: block;
+    margin: 30px auto 0; /* Lo centramos en la parte de abajo del formulario */
+}
+/* --------------------
+   MEDIA QUERIES (RESPONSIVE DESIGN)
+   -------------------- */
+@media (max-width: 768px) {
+    /* Ajustes para tabletas y móviles */
+    
+    body {
+        /* Eliminamos el padding a la izquierda y lo centramos para móviles */
+        padding-left: 0; 
+        justify-content: center;
+        align-items: flex-start; /* Alineamos el contenido arriba */
+        padding-top: 50px;
+    }
+    
+    .hero-section {
+        /* Damos un padding general para que el contenido no toque los bordes */
+        padding: 0 20px;
+        max-width: 100%;
+        text-align: left; /* Alineamos el texto a la izquierda */
+    }
+    
+    .hero-title {
+        /* Reducimos el tamaño de la fuente para que quepa bien en la pantalla */
+        font-size: 40px; 
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .main-button {
+        /* Hacemos que el botón ocupe el 100% del ancho del contenedor */
+        width: 100%; 
+        max-width: 200px; /* Pero con un límite para que no se vea gigante */
+    }
+    .conversion-form-section {
+        padding: 50px 20px;
+    }
+    .form-submit-btn {
+        width: 100%;
+        margin: 30px 0 0;
+    }
 }
