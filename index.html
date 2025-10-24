@@ -43,8 +43,11 @@
     <section class="conversion-form-section" id="formulario">
         <h2 class="section-title">¿Interesado en Rendimiento? Hablemos.</h2>
         <p class="form-intro">Envíame un mensaje y te demostraré cómo el "pixel perfect" y la velocidad se convierten en resultados de negocio.</p>
-
-        <form action="#" method="POST" class="contact-form">
+        <form name="contact"
+        method="POST" data-netlify="true"
+        class="contact-form">
+        </form>
+         <form action="#" method="POST" class="contact-form">
             <div class="form-group">
                 <label for="name">Nombre Completo</label>
                 <input type="text" id="name" name="name" required placeholder="Tu nombre" />
