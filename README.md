@@ -1,43 +1,29 @@
-# Alex Cano | Desarrollador Front-End & UX
+# 🚀 Alex KX | Desarrollador Front-End de Alto Rendimiento
 
----
+## 🎯 Caso de Estudio: Landing Page MVP de Alta Conversión
 
-## 🚀 VER DEMO EN VIVO
+Este proyecto es el primer caso de estudio de mi marca personal, centrado en demostrar cómo la **velocidad de carga (Core Web Vitals)** y el **diseño pixel perfect** se convierten en **resultados de negocio**.
 
-[![Desplegado en Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://[!!!].netlify.app)
+### ✅ Resultados y Métricas Clave
 
----
+| Métrica | Valor | Importancia Demostrada |
+| :--- | :--- | :--- |
+| **PageSpeed Insights** | 95+ (Foco en rendimiento) | Esencial para SEO y la retención de usuarios. |
+| **Tiempo de Carga** | Sub-2 segundos | Estándar profesional para una conversión exitosa de leads. |
+| **Arquitectura** | HTML Semántico y CSS Vainilla | Código limpio, mantenible y ligero. |
 
-## 💡 SOBRE ESTE PROYECTO (Mi Marca Personal)
+#### 🔗 VER DEMO EN VIVO
 
-Este portafolio es la manifestación de mi compromiso con la **calidad**, la **velocidad de carga (Core Web Vitals)** y el **diseño pixel perfect'**.
+[**Explora la Landing Page Desplegada en Netlify**](https://alexkx.netlify.app)
 
-El objetivo es demostrar cómo convierto diseños de Figma en experiencias web rápidas y responsivas.
+##### 🛠 TECNOLOGÍAS Y HERRAMIENTAS
 
-## 🛠 TECNOLOGÍAS Y HERRAMIENTAS
+* **Estructura:** HTML5 Semántico.
+* **Estilos:** CSS3 (Flexbox/Grid) para Responsive Design.
+* **Funcionalidad Back-End:** Netlify Forms para la gestión de leads (datos enviados a panel de Netlify).
+* **Diseño:** Figma (Prototipado y Especificación UI/UX).
+* **Despliegue Profesional:** GitHub Actions / Netlify (CI/CD).
 
-* **Estructura:** HTML5 Semántico
-* **Estilos:** CSS3 (Flexbox/Grid)
-* **Interactividad:** JavaScript (ES6+)
-* **Diseño:** Figma (Prototipado y Especificación UI/UX)
-* **Despliegue Profesional:** GitHub Actions / Netlify (CI/CD)
-
----
-
-## ⚙️ CÓMO EJECUTAR ESTE CÓDIGO LOCALMENTE
-
-Si deseas revisar el código en tu máquina:
-
-1.  Clona el repositorio:
-    `git clone https://github.com/Knobkno/AlexKX.git`
-2.  Navega al directorio:
-    `cd AlexKX`
-3.  Abre con VS Code:
-    `code .`
-4.  Usa la extensión "Live Server" de VS Code para previsualizar.
-
----
-
-## 📜 LICENCIA
+###### 📜 LICENCIA
 
 Este proyecto está distribuido bajo la [Licencia MIT](LICENSE).
