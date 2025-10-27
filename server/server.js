@@ -17,7 +17,7 @@ app.use(cors());
 // server/server.js (Añadir estas líneas)
 
 // Importar el modelo de Tarea que acabas de crear
-const Task = require('./server/models/Task');
+const Task = require('./models/Task');
 
 // ----------------------------------------------------
 // Rutas de la API (CRUD)
