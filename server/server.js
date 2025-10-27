@@ -24,7 +24,7 @@ const Task = require('./models/Task');
 // ----------------------------------------------------
 
 // 1. GET (Leer todas las tareas)
-app.get('/api/tasks', async (req, res) => {
+app.get('/tasks', async (req, res) => {
   try {
     // Buscar todas las tareas y ordenarlas por fecha de creación (más nuevas primero)
     const tasks = await Task.find({}).sort({ createdAt: -1 });
@@ -35,7 +35,7 @@ app.get('/api/tasks', async (req, res) => {
 });
 
 // 2. POST (Crear una nueva tarea)
-app.post('/api/tasks', async (req, res) => {
+app.post('/tasks', async (req, res) => {
   try {
     // Crear una tarea con los datos recibidos en el cuerpo (req.body)
     const task = await Task.create(req.body);
@@ -47,7 +47,7 @@ app.post('/api/tasks', async (req, res) => {
 });
 
 // 3. PUT (Actualizar/Toggle la tarea - ej: marcar como completada)
-app.put('/api/tasks/:id', async (req, res) => {
+app.put('/tasks/:id', async (req, res) => {
   const { id: taskID } = req.params;
   try {
     // Encuentra por ID y actualiza
@@ -65,7 +65,7 @@ app.put('/api/tasks/:id', async (req, res) => {
 });
 
 // 4. DELETE (Eliminar una tarea)
-app.delete('/api/tasks/:id', async (req, res) => {
+app.delete('/tasks/:id', async (req, res) => {
   const { id: taskID } = req.params;
   try {
     const task = await Task.findOneAndDelete({ _id: taskID });
