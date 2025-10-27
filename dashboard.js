@@ -3,7 +3,7 @@
 // =========================================================
 // 0. CONFIGURACIÓN E INICIALIZACIÓN
 // =========================================================
-const baseURL = 'https://localhost:5000/api/tasks'; // URL de la API
+const baseURL = 'https://alexkx-task-api.onrender.com'; // URL de la API
 
 // =========================================================
 // 1. SELECTORES (Obtener elementos del DOM)
