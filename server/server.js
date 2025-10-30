@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 
 // 2. Middlewares esenciales
 app.use(express.json());
-app.use(cors()); 
+app.use(cors({ origin: '*' })); 
 
 // server/server.js (Añadir estas líneas)
 
@@ -85,7 +85,7 @@ mongoose.connect(process.env.MONGO_URI)
     
     // 4. Iniciar el servidor SOLO si la conexión a la BD es exitosa
     app.listen(port, () => {
-      console.log(`🚀 Servidor Node.js escuchando en http://localhost:${port}`);
+      console.log(`🚀 Servidor Node.js escuchando en ${port}`);
     });
   })
   .catch((error) => {
