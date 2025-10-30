@@ -60,7 +60,7 @@ const fetchTasks = async () => {
         const data = await response.json();
         
         // Mostrar las tareas usando tu función de DOM (adaptada)
-        displayTasks(data.tasks); 
+        displayTasks(data.task); 
         
     } catch (error) {
         console.error('Error al cargar tareas:', error);
