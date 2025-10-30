@@ -6,7 +6,24 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+// 1. Define el origen permitido (la URL de tu Dashboard en Netlify)
+const allowedOrigins = [
+    'https://dashboardinteractive.netlify.app',
+    // Puedes añadir 'http://localhost:XXXX' si también haces pruebas locales
+];
 
+// 2. Configura CORS
+app.use(cors({
+    origin: function (origin, callback) {
+        // Permitir solicitudes sin 'origin' (como apps móviles o Postman)
+        // O si el origen está en nuestra lista de permitidos
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    }
+}));
 const app = express();
 const port = process.env.PORT || 5000;
 
